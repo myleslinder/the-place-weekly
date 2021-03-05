@@ -1,0 +1,16 @@
+name = "the-place-weekly"
+type = "webpack"
+account_id = "42f53d048816c0f1fb0dd50db392129b"
+workers_dev = true
+route = ""
+zone_id = ""
+
+kv_namespaces = [
+  { binding = "MYLES_TODOS", id = "7cb9de31c2d744418ebe32bd09f5759c", preview_id = "7cb9de31c2d744418ebe32bd09f5759c"},
+]
+
+[site]
+bucket = "./public"
+
+[triggers]
+crons = ["0 13 * * wed"]
