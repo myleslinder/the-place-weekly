@@ -8,7 +8,6 @@ export const getPlaylistsForGroup = async groupname => {
   let playlistPromises = list.keys.map(({ name }) =>
     MYLES_TODOS.get(name, 'json'),
   )
-  console.log(list.keys)
   return Promise.all(playlistPromises)
 }
 
